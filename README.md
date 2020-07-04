@@ -1,2 +1,3 @@
 # webcontent
-Content for https://ktaneleague.onpointcoding.net
+
+This repository contains the source code for the website (https://ktaneleague.onpointcoding.net)
