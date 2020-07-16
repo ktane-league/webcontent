@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Rules — KTaNE League</title>
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+		<link rel="stylesheet" type="text/css" href="static/css/font.css">
+		<script src="static/js/ktane-utils.js"></script>
+		<script src="static/js/jquery.3.1.1.min.js"></script>
+		<!--script src="static/js/live.js"></script-->
+		<style>
+			code
+			{
+				background-color:black;
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="section">
+			<div class="page page-bg-01">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Race</span>
+					<span class="page-header-section-title">KTaNE League</span>
+				</div>
+				<div class="page-content">
+					<img src="static/img/Component/KTaNE League.png" class="diagram">
+					<h2>On the Subject of KTaNE League</h2>
+					<p class="flavour-text">Your flavor text should go here.</p>
+
+					Welcome to the new season three of the KTANE League.  During the season, participants will compete each week on predefined seeds of specially designed missions to achieve the best score.
+					<br><br>
+					<b>IMPORTANT:  THESE RULES ARE SUBJECT TO CHANGE AT THE AGREEMENT OF ALL CURRENTLY INVOLVED/RELEVANT TEAMS.</b><br><br>
+					<u><b>General information</b></u>
+					<ul>
+						<li>Sign up Deadline:  September 27, 2018, subject to having enough teams</li>
+						<li>Current Tournament Directors:  Elias5891, Qkrisi, MrMelon</li>
+					</ul>
+					<u><b>Requirements</b></u>
+					<ul>
+						<li>Ability to record video [defuser]</li>
+						<li>Ability to voice communicate [team]</li>
+						<li>Async Handler mod</li>
+						<li>Mod Selector mod</li>
+						<li>Tweaks mod</li>
+						<li>Any mod in the pool [defuser]</li>
+					</ul>
+					<u><b>Format for teams</b></u>
+					<br>
+					This season will consist of 2 categories, assuming an adequate number of players/teams sign up for them before the deadline:
+					<ul>
+						<li>Modded EFM</li>
+						<li>Modded Team</li>
+					</ul>
+				</div>
+				<div class="page-footer relative-footer">Page 1 of 7</div>
+			</div>
+			<div class="page page-bg-02">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Race</span>
+					<span class="page-header-section-title">KTaNE League</span>
+				</div>
+				<div class="page-content">
+					<h3>General racing rules</h3>
+					<ol>
+						<li>Teams/Players will be allowed to practice as much as desired using the Test Mission provided by the Async Handler. The answers of that mission are shown next to the start button.  When they are prepared, they get the key by DMing `-key` to the Game Host and entering it into the Async Handler.</li>
+						<br>
+						<li>In order to use the Async Handler correctly, install the <b>latest</b> version of Mod Selector and read Appendix T (Tweaks) and Appendix W (Whitelist) carefully! The holdable will refuse to start the missions if you don’t have everything set up in the correct way.</li>
+						<br>
+						<li><u>The team will only receive 1 run at an official seeded run.</u>  <b>Exceptions will not be made for game crashes, player/team distractions, etc</b></li>
+						<br>
+						<li><u>Teams have to submit a video and the logfile.</u> <b>Not submitting the video or the logfile will result in 0 points that week. Async Handler tries to upload the logfile automatically, however if you see an “Error uploading logfile. Please use the bot to do it!” message on it, you have to DM <code>!submit log &ltlog attached or LFA link></code> to the bot. To submit the video, use <code>!submit video &ltvideo attached or YouTube link></code>	, if you’re using a YouTube link, make the video unlisted!</b></li>
+						<br>
+						<li><u>Honest and honorable play is expected.</u> <b>The league does not have any rules regarding cheat sheet usage.  However, usage of any automated solvers is prohibited.  Usage of the output log (or player.log) during the run is prohibited.  Experts looking at the screen of the defuser’s screen, outside of EFM runs, is prohibited.  Getting the seed number from other teams/players is prohibited.  Please note this is not an exhaustive list of non-permissible actions.</b> Use common sense, and if in doubt, ask.</li>
+					</ol>
+				</div>
+				<div class="page-footer relative-footer">Page 2 of 7</div>
+			</div>
+			<div class="page page-bg-03">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Race</span>
+					<span class="page-header-section-title">KTaNE League</span>
+				</div>
+				<div class="page-content">
+					<h3>Contest format - King of the Hill</h3>
+					<ul>
+						<li>Teams will consist of a maximum of 4 team members.  EFM’ers play solo.</li>
+						<br>
+						<li>Upon signup, each team/player will submit a 30 module list that the directors will use to create the missions. Also every team/player can mention 1 or 2 modules that the directors won’t use. The modules will be categorized by regular, boss, needy (Cookie Jars and UCN count as boss) and the missions will consist of 14 regular modules selected by going through the lists teams submitted one by one, a boss and a needy.<br>Submitting bosses or needies is not necessary, and should be 1 at most each.<br>The module list will be announced publicly after every team gave us their votes.</li>
+						<br>
+						<li>
+							The holdable has two buttons that start the mission. A “Test” and a “Start” button. The “Test” button is for the purpose to let people practice the modules and the bomb. The correct answers of the modules are listed on the holdable as well. The “Start” button asks the defuser to enter the key that they can get by DMing `-key` to the Game Host, and it starts the main mission that will grant the team points based on their performance using these formulas:
+							<ul>
+								<li>EFM: <code>(&ltsolved TP scores summed>/total*100)-(0.5*strikes)+(0.05*SecondsRemaining)</code></li>
+								<li>Team: <code>(&ltsolved TP scores summed>/total*10)-(0.5*strikes)+(0.05*SecondsRemaining)</code></li>
+							</ul>
+							The teams can start the mission anytime they want within the week. Every week the holdable will give the teams a new mission.
+						</li>
+						<br>
+						<li>After the 6th week is done, the team and EFM player with the highest point total wins.</li>
+						<br>
+						<li>After each week done, a live commentary on the submitted videos will take place on Twitch, commented by Yabbaguy.</li>
+						<br>
+						<li>Every score will be visible real time on a spreadsheet.</li>
+					</ul>
+				</div>
+				<div class="page-footer relative-footer">Page 3 of 7</div>
+			</div>
+			<div class="page page-bg-04">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Race</span>
+					<span class="page-header-section-title">KTaNE League</span>
+				</div>
+				<div class="page-content">
+					<h3>FAQs</h3><br>
+					Q:  What is the maximum number of players for a team?<br>
+					A:  4.  However, which member experts and which ones defuse is not required to stay the same through the whole season.  Also, alternates can be used on runs, and can be added to the team at any time. In this case, notify a director!
+					<br><br>
+					Q:  How will teams be identified?<br>
+					A:  Teams may choose a name for themselves, subject to approval by the TDs. 
+					<br><br>
+					Q:  Would people be allowed to take part in multiple leagues at the same time or would they only be allowed to take part in one for the season? (eg. Someone takes part in both Modded Team and EFM )
+					<br>
+					A:  A player may be in either one or both of the 2 categories.  Each will have their own missions/leaderboards/league scores.
+					<br><br>
+					Q:  Is it considered legal to solve the modules by yourself (clarification: in full. Some modules, for example 3D Maze, require a bit of prep work (on the flip side of that there's Plumbing, which requires a lot of defuser work, so that's to be expected)) without looking at the manual when it comes to the team based leagues?
+					<br>
+					A:  The ruling for this season is that for any modules that the defuser can do without any assistance, they are free to do so.  
+					<br><br>
+					Q:  How do I sign (me/my team) up?<br>
+					A:  Use the Game Host bot on the KTaNE League Discord server:
+					<ul>
+						<li>For teams, use <code>!signup &ltteam name> &ltteammates as mentions></code> - You don’t need to mention yourself</li>
+						<li>For EFM, use <code>!signupefm &ltteam name></code></li>
+					</ul>
+					Both of these require accepting the request both in the channel you ran the command in and in DMs for each team member.
+				</div>
+				<div class="page-footer relative-footer">Page 4 of 7</div>
+			</div>
+			<div class="page page-bg-05">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Race</span>
+					<span class="page-header-section-title">KTaNE League</span>
+				</div>
+				<div class="page-content">
+					<h2>Appendix F: Forbidden modules</h2>
+					There are modules that won’t be use in missions due to either:
+					<ul>
+						<li>Different outcome with Internet access present</li>
+						<li>Usage of game data (eg. loaded mods)</li>
+						<li>Usage of system date</li>
+					</ul>
+					These modules can’t be selected by the teams
+					<ul>
+						<li>Calendar</li>
+						<li>Cheap Checkout</li>
+						<li>Dr. Doctor</li>
+						<li>Foreign Exchange Rates</li>
+						<li>Remote Math</li>
+						<li>Repo Selector</li>
+						<li>Sticky Notes</li>
+						<li>Unfair Cipher</li>
+					</ul>
+				</div>
+				<div class="page-footer relative-footer">Page 5 of 7</div>
+			</div>
+			<div class="page page-bg-06">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Race</span>
+					<span class="page-header-section-title">KTaNE League</span>
+				</div>
+				<div class="page-content">
+					<h2>Appendix T: Tweaks</h2>
+					<p>The holdable demands Tweaks to be loaded and enabled, but you have to make sure it has the correct settings set:</p>
+					<table>
+						<tbody>
+							<tr>
+								<th><i>Setting name</i></th>
+								<th><i>Value</i></th>
+							</tr>
+							<tr><th></th><th></th></tr>
+							<tr>
+								<th>Better Case Picker</th>
+								<th>Disabled</th>
+							</tr>
+							<tr>
+								<th>Bomb HUD</th>
+								<th>Enabled</th>
+							</tr>
+							<tr>
+								<th>Show Edgework</th>
+								<th>Disabled</th>
+							</tr>
+							<tr>
+								<th>Disable Advantegous Features</th>
+								<th>Disabled</th>
+							</tr>
+							<tr>
+								<th>Show Tips</th>
+								<th>Disabled</th>
+							</tr>
+							<tr>
+								<th>Mode</th>
+								<th>Normal</th>
+							</tr>
+							<tr>
+								<th>Mission Seed</th>
+								<th>-1</th>
+							</tr>
+							<tr>
+								<th>Case Generator</th>
+								<th>Disabled</th>
+							</tr>
+							<tr>
+								<th>Module Tweaks</th>
+								<th>Disabled</th>
+							</tr>
+						</tbody>
+					</table><br>
+					Values of the settings that are not listed in the table above doesn't matter.
+				</div>
+				<div class="page-footer relative-footer">Page 6 of 7</div>
+			</div>
+			<div class="page page-bg-07">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Race</span>
+					<span class="page-header-section-title">KTaNE League</span>
+				</div>
+				<div class="page-content">
+					<h2>Appendix W: Whitelist</h2>
+					<p>Within the following mod types, everything should be disabled except the ones in the tables below:</p>
+					<ul>
+						<li>Services</li>
+						<li>Widgets</li>
+						<li>Bomb Cases</li>
+						<li>Gameplay Rooms</li>
+					</ul>
+					These mods should be enabled:
+					<table>
+						<tbody>
+							<tr>
+								<th><i>Name</i></th>
+								<th><i>Category</i></th>
+							</tr>
+							<tr><th></th><th></th></tr>
+							<tr>
+								<th>Tweaks</th>
+								<th>Service</th>
+							</tr>
+							<tr>
+								<th>Camera Zoom</th>
+								<th>Service</th>
+							</tr>
+							<tr>
+								<th>Boss Module Manager</th>
+								<th>Service</th>
+							</tr>
+							<tr>
+								<th>Async Service</th>
+								<th>Service</th>
+							</tr>
+							<tr>
+								<th>Double Decker</th>
+								<th>Bomb case</th>
+							</tr>
+						</tbody>
+					</table><br>
+					The state of these mods doesn't matter:
+					<table>
+						<tbody>
+							<tr>
+								<th><i>Name</i></th>
+								<th><i>Category</i></th>
+							</tr>
+							<tr><th></th><th></th></tr>
+							<tr>
+								<th>Logfile Hotkey Service</th>
+								<th>Service</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Page 7 of 7</div>
+			</div>
+		</div>
+	</body>
+</html>
